@@ -11,27 +11,160 @@ import net.soulteam.soulcore.utils.enums.Version;
 import org.bukkit.entity.Player;
 
 public interface User {
+
+	/**
+	 * to String
+	 *
+	 * @return name
+	 */
 	String toString();
+
+	/**
+	 * check exist player or not
+	 *
+	 * @return true - player exist
+	 */
 	boolean exists();
+
+	/**
+	 * get user name
+	 *
+	 * @return name
+	 */
 	String getName();
+
+	/**
+	 * get user last message
+	 *
+	 * @return last message
+	 */
 	String getLastMessage();
+
+	/**
+	 * set last message to the user
+	 *
+	 * @param message message to set
+	 */
 	void setLastMessage(final String message);
+
+	/**
+	 * get user clan
+	 *
+	 * @return clan
+	 */
 	Clan getClan();
+
+	/**
+	 * set clan to the user
+	 *
+	 * @param clan clan to set
+	 */
 	void setClan(final String clan);
+
+	/**
+	 * check is clan the user or not
+	 *
+	 * @return true - user in clan
+	 */
 	boolean isInClan();
+
+	/**
+	 * get user prefix
+	 *
+	 * @return active user prefix
+	 */
 	String getPrefix();
+
+	/**
+	 * set prefix to the user
+	 *
+	 * @param prefix to set
+	 */
 	void setPrefix(final String prefix);
+
+	/**
+	 * get user ip
+	 *
+	 * @return user ip
+	 */
 	String getIP();
+
+	/**
+	 * set last api to the user
+	 *
+	 * @param ip ip to set
+	 */
 	void setIP(final String ip);
+
+	/**
+	 * get level of the user
+	 *
+	 * @return level
+	 */
 	int getLevel();
+
+	/**
+	 * set level to the user
+	 *
+	 * @param lvl lvl to set
+	 */
 	void setLevel(final int lvl);
+
+	/**
+	 * add level to the user
+	 *
+	 * @param lvl lvl to add
+	 */
 	void addLevel(final int lvl);
+
+	/**
+	 * take level to the user
+	 *
+	 * @param lvl lvl to take
+	 */
 	void takeLevel(final int lvl);
+
+	/**
+	 * get xp booster
+	 *
+	 * @return booster
+	 */
 	double getBoost();
+
+	/**
+	 * get now xp
+	 *
+	 * @return xp
+	 */
 	int getXP();
+
+	/**
+	 * set xp to the user
+	 *
+	 * @param xp xp to set
+	 */
 	void setXP(final int xp);
+
+	/**
+	 * get need xp to following level
+	 *
+	 * @param lvl following level
+	 * @return needed xp
+	 */
 	double getNeedXP(final int lvl);
+
+	/**
+	 * get user refs count
+	 *
+	 * @return refs count
+	 */
 	int getRefs();
+
+	/**
+	 * set refs to the user
+	 *
+	 * @param count refs to set
+	 */
 	void setRefs(final int count);
 	void addRefs(final int count);
 	void takeRefs(final int count);
