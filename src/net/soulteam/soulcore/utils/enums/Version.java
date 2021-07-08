@@ -2,13 +2,13 @@ package net.soulteam.soulcore.utils.enums;
 
 public enum Version {
 	UNKNOWN(0, 0, false, "unknown"),
-	V1_11(315, 1, false, "1.11"),
-	V1_12(340, 2, false, "1.12"),
-	V1_13(393, 3, false, "1.13"),
-	V1_14(477, 4, false, "1.14"),
-	V1_15(573, 5, true, "1.15"),
-	V1_16(735, 6, true, "1.16"),
-	V1_17(755, 7, true, "1.17");
+	V1_11(0, 1, false, "1.11"),
+	V1_12(0, 2, false, "1.12"),
+	V1_13(0, 3, false, "1.13"),
+	V1_14(0, 4, false, "1.14"),
+	V1_15(0, 5, true, "1.15"),
+	V1_16(0, 6, true, "1.16"),
+	V1_17(0, 7, true, "1.17");
 
 	final int protocolVersion;
 	final int version;
