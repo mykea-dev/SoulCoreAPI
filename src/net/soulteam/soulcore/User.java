@@ -209,10 +209,6 @@ public interface User {
 	int getRubles();
 	Region getInRegion();
 	Version getClientVersion();
-	Boss getActiveBoss();
-	void setActiveBoss(final Boss boss);
-	double getBossDamage(final Boss boss);
-	void addRubles(final double rubles);
 	void takeRubles(final double rubles);
 	void addBankMoney(final double money);
 	void takeBankMoney(final double money);
